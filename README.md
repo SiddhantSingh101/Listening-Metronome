@@ -9,6 +9,18 @@ The goal is simple:
 
 ---
 
+## How you’ll test the “backend” without UI
+
+You don’t need React Native running immediately to test the Kotlin part. You can:
+Write a Kotlin console app in Android Studio first.
+Feed it recorded .wav or .mp3 files of you playing.
+Make sure it detects beats and outputs “you were X ms late/early.”
+Once that works, plug it into React Native later.
+So the dev flow is:
+Prototype + debug in pure Kotlin.
+Wrap it in a native module.
+Connect it to React Native UI for visualization.
+
 ## ✨ Key Features
 
 ### Built-in Metronome
